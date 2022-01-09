@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EventAggregatorCL\EventAggregator.csproj" />
     <ProjectReference Include="..\HelpingHand\HelpingHand.csproj" />
     <ProjectReference Include="..\ObjectPoolCL\ObjectPool.csproj" />
   </ItemGroup>
