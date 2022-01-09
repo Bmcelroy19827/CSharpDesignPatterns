@@ -9,16 +9,20 @@ Much of my knowledge of object oriented design patterns comes from three main so
 
 *Note*: I added "Note" to the list of task list tags
   - To do this go to `tools >> options >> Environment >> Task List` and add "Note" to the list
-## Helping Hand
+
+## Projects
+### Helping Hand
 - This is not a design pattern, just a class library I created to put stars across the console for formatting right now
 
-## Patterns Picker
+### Patterns Picker
 - This is the Console app that has a reference to all of the other Class Libraries and allows you to pick which design pattern you'd like to see the current implementation of in the Console.
 - This should be the project chosen for startup
 
-## Object Pool
-- This Class Library allows you to see an object pool which limits the total number of instances of a class to 10 (by default) and starts by loading the pool with 5 instances of this class
+## Design Pattern Projects
+-   These are all Class Libraries
+### Object Pool
+- This allows you to see an object pool which limits the total number of instances of a class to 10 (by default) and starts by loading the pool with 5 instances of this class
 
-## Event Aggregator
-- This Class Library allows you to see how subscribers react when the class "Events" they've subscribed to have been published
+### Event Aggregator
+- This allows you to see how subscribers react when the class "Events" they've subscribed to have been published
 - This is a pub/sub pattern and the aggregator seems to be pretty much the broker if you've used MQTT for IoT devices
