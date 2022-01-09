@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelpingHand\HelpingHand.csproj" />
-    <ProjectReference Include="..\ObjectPoolCL\ObjectPoolCL.csproj" />
+    <ProjectReference Include="..\ObjectPoolCL\ObjectPool.csproj" />
   </ItemGroup>
 
 </Project>
