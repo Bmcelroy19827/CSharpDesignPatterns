@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObjectPoolCL.CoreBits
+namespace ObjectPool.CoreBits
 {
     // https://www.infoworld.com/article/3221392/how-to-use-the-object-pool-design-pattern-in-c.html
     // Used to help improve performance by queuing up to a (configurable) maximum number of expensive classes (one class type)

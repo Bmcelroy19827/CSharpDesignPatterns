@@ -1,7 +1,7 @@
-﻿using ObjectPoolCL.CoreBits;
+﻿using ObjectPool.CoreBits;
 using HelpingHand;
 
-namespace ObjectPoolCL
+namespace ObjectPool
 {
     public class OPMain
     {
