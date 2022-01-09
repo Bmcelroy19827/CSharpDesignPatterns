@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectPool", "ObjectPool\ObjectPool.csproj", "{C1DADEB8-575F-4281-8BF1-1426A51D2C7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAggregator", "EventAggregator\EventAggregator.csproj", "{CFFDB326-F12D-4CFA-851C-A56903A47F58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C1DADEB8-575F-4281-8BF1-1426A51D2C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1DADEB8-575F-4281-8BF1-1426A51D2C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1DADEB8-575F-4281-8BF1-1426A51D2C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFDB326-F12D-4CFA-851C-A56903A47F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFDB326-F12D-4CFA-851C-A56903A47F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFDB326-F12D-4CFA-851C-A56903A47F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFDB326-F12D-4CFA-851C-A56903A47F58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
