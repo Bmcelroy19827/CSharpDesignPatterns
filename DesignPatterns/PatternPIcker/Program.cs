@@ -1,5 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using HelpingHand;
+using ObjectPoolCL;
+
+OPMain oPool = new OPMain();
+
 HConsole.StarRow();
 Console.WriteLine("Hello Patter Picker!!!!");
 Console.WriteLine("Pick a pattern (q to quit):");
@@ -18,7 +22,8 @@ while (keepGoBro)
             //new up aggregator
             break;
         case "object pool":
-            //new up object pool
+            //start object pool
+            oPool.Start();
             break;
         case "q":
             keepGoBro = false;
