@@ -23,14 +23,14 @@ Much of my knowledge of object oriented design patterns comes from three main so
 2. Create a Class Library matching the name of the design pattern (Reference HelpingHand if necessary)
 3. Implement the pattern in the Class Library
 4. Figure out a way to educate the user on the pattern
-  - Choose your own adventure guide?
-  - Operations that benefit from the pattern ran inside the Console
-  - etc.  
+    - Choose your own adventure guide?
+    - Operations that benefit from the pattern ran inside the Console
+    - etc.  
 5. Add a project reference for the new Class Library to the PatternsPicker project
 6. Add code to implement Class Library in PatternPicker
 7. Update Readme
-  - Remove the Pattern from the "Needed Patterns" list 
-  - Add Pattern under the other implemented patterns and include a short description of the project and how it works  
+    - Remove the Pattern from the "Needed Patterns" list 
+    - Add Pattern under the other implemented patterns and include a short description of the project and how it works  
 
 ## Projects
 ### Helping Hand
