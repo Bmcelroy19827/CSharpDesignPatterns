@@ -13,19 +13,37 @@ namespace EventAggregator
 
         public void Start()
         {
-            Console.WriteLine("Hello, Aggregator!");
+            /* Console.WriteLine("Hello, Aggregator!");
 
-            HConsole.StarRow();
-            DisplayCommands();
-            HConsole.StarRow();
+             HConsole.StarRow();
+             DisplayCommands();
+             HConsole.StarRow();*/
+           
             bool keepGoBro = true;
+            string[] opt =
+             {
+                    "Create Target",
+                    "Delete Target",
+                    "List Targets",
+                    "Update Target"
+             };
+            string greetings = "Hello, Aggregator!";
+            string instruction = "(Up or Down arrow to navigate or press any number on menu to select.Enter q to quit.)";
             while (keepGoBro)
             {
-                string response = Console.ReadLine() ?? "";
+              
+                /*string response = Console.ReadLine() ?? "";*/
 
+                string response = HMenuPicker.MenuPicker(opt, greetings, instruction);
+                if (response.Length <= 1)
+                {
+                    response += Console.ReadLine() ?? "";
+                }
+                /* Console.WriteLine(response);*/
                 switch (response.ToLower())
                 {
-                    case "a":
+                    case "1":
+                    case "create target":
                         //Add
                         Console.WriteLine("Please provide a description for the new item");
                         string? des = Console.ReadLine();
@@ -33,24 +51,31 @@ namespace EventAggregator
                         {
                             _handler.CreateNewTarget(des);
                         }
+                        
                         break;
-                    case "r":
+                    case "2":
+                    case "delete target":
                         //Delete
                         Find(_handler.DeleteTarget, _handler);
                         break;
-                    case "l":
+                    case "3":
+                    case "list targets":
                         _handler.ListTargets();
+                        Console.ReadKey(true);
                         break;
-                    case "u":
+                    case "4":
+                    case "update target":
                         Find(_handler.SaveTarget, _handler, true);
+                        Console.ReadKey(true);
                         break;
                     case "q":
                         keepGoBro = false;
                         break;
                     default:
-                        DisplayCommands();
+                        /* DisplayCommands()*/
                         break;
                 }
+               
             }        
         }
 
@@ -81,10 +106,10 @@ namespace EventAggregator
             }
         }
 
-        private static void DisplayCommands()
+        /*private static void DisplayCommands()
         {
             Console.WriteLine("*\tPick an action (q to quit):");
             Console.WriteLine("*\tCreate Target: a\n*\tDelete Target: r\n*\tList Targets: l\n*\tUpdate Target: u");
-        }
+        }*/
     }
 }
