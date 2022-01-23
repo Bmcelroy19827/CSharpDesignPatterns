@@ -20,30 +20,51 @@ namespace ObjectPool
         {
 
 
-            Console.WriteLine("Hello, Object Pool!!!");
+           /* Console.WriteLine("Hello, Object Pool!!!");
 
             HConsole.StarRow();
             Console.WriteLine("*\tEnter a keyboard shortcut to perform an action");
             Console.WriteLine("*\tAdd Object: a\n*\tRelease Object: r\n*\tCheck Last Method Calls in pool: p\n*\tCheck Last Method Calls in Console: c\n*\tQuit: q");
-            HConsole.StarRow();
+            HConsole.StarRow();*/
             bool keepGoBro = true;
+            string[] opt =
+            {
+                    "Add Object",
+                    "Release Object",
+                    "Check Last Method Calls in pool",
+                    "Check Last Method Calls in Console"
+             };
+            string greetings = "Hello, Object Pool!!!";
+            string instruction = "(Up or Down arrow to navigate or press any number on menu to select.Enter q to quit.)";
             while (keepGoBro)
             {
-                string userResponse = Console.ReadLine() ?? "";
-
+                /*string userResponse = Console.ReadLine() ?? "";*/
+                string userResponse = HMenuPicker.MenuPicker(opt, greetings, instruction);
+                if (userResponse.Length <= 1)
+                {
+                    userResponse += Console.ReadLine() ?? "";
+                }
                 switch (userResponse.ToLower())
                 {
-                    case "a":
+                    case "1":
+                    case "add object":
                         AddObject();
+                        Console.ReadLine();
                         break;
-                    case "r":
+                    case "2":
+                    case "release object":
                         RemoveObject();
+                        Console.ReadLine();
                         break;
-                    case "p":
+                    case "3":
+                    case "check last method calls in pool":
                         objPool.showLastMethodOnAllStoredObjects();
+                        Console.ReadLine();
                         break;
-                    case "c":
+                    case "4":
+                    case "check last method calls in console":
                         ShowLastMethodsCalled();
+                        Console.ReadLine();
                         break;
                     case "q":
                         keepGoBro = false;
@@ -56,7 +77,7 @@ namespace ObjectPool
             Console.WriteLine("Good Bye Object Pool!!!!");
             HConsole.StarRow();
             Console.WriteLine();
-
+            Console.ReadLine();
             void AddObject()
             {
                 SharedObject? obj = objPool.Get();
